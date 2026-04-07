@@ -141,12 +141,76 @@
 
     .support a:hover { text-decoration: underline; }
 
+    .privacy {
+      width: 100%;
+      max-width: 680px;
+      margin-top: 60px;
+      padding: 40px 24px;
+      text-align: left;
+    }
+
+    .privacy h2 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .privacy .updated {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    .privacy h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #2dff78;
+      margin: 24px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .privacy p, .privacy li {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.75;
+    }
+
+    .privacy ul {
+      padding-left: 20px;
+      margin-top: 4px;
+    }
+
+    .privacy ul li { margin-bottom: 4px; }
+
+    .privacy a {
+      color: #2dff78;
+      text-decoration: none;
+    }
+
+    .privacy a:hover { text-decoration: underline; }
+
+    .divider {
+      width: 100%;
+      max-width: 680px;
+      height: 1px;
+      background: #2a2a32;
+      margin-top: 60px;
+    }
+
     footer {
       padding: 32px 24px;
       font-size: 12px;
       color: #444;
       text-align: center;
     }
+
+    footer a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    footer a:hover { color: #888; }
 
     @media (max-width: 480px) {
       h1 { font-size: 38px; }
@@ -204,13 +268,53 @@
     <h2>Support</h2>
     <p>
       Have a question, found a bug, or just want to say hi?<br />
-      Reach out at <a href="mailto:93minash@gmail.com">mailto:93minash@gmail.com</a><br /><br />
+      Reach out at <a href="mailto:support@crunchguitar.app">support@crunchguitar.app</a><br /><br />
       We typically respond within 24 hours.
     </p>
   </section>
 
+  <div class="divider"></div>
+
+  <section class="privacy" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="updated">Last updated: April 7, 2026</p>
+
+    <p>Crunch ("we", "our", or "the app") is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
+
+    <h3>What We Collect</h3>
+    <p>Crunch does not collect, store, or transmit any personal data. Specifically:</p>
+    <ul>
+      <li>No account or sign-up required</li>
+      <li>No name, email, or contact information collected</li>
+      <li>No usage analytics or tracking</li>
+      <li>No advertising identifiers</li>
+      <li>No data shared with third parties</li>
+    </ul>
+
+    <h3>Microphone Access</h3>
+    <p>Crunch requests access to your iPhone's microphone solely to power the built-in guitar tuner. Audio is processed entirely on your device in real time. No audio is recorded, stored, or transmitted anywhere.</p>
+
+    <h3>Data Storage</h3>
+    <p>All app data — your XP, lesson progress, streaks, and badges — is stored locally on your device using Apple's SwiftData framework. This data never leaves your device and is not accessible to us.</p>
+
+    <h3>Children's Privacy</h3>
+    <p>Crunch is suitable for all ages. We do not knowingly collect any information from children or any other users, as no data collection takes place.</p>
+
+    <h3>Third-Party Services</h3>
+    <p>Crunch does not integrate any third-party SDKs, analytics tools, advertising networks, or external services. The app works entirely offline.</p>
+
+    <h3>Changes to This Policy</h3>
+    <p>If we update this privacy policy, the new version will be posted on this page with an updated date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h3>Contact</h3>
+    <p>If you have any questions about this privacy policy, contact us at <a href="93minash@gmail.com">93minash@gmail.com</a>.</p>
+  </section>
+
+  <div class="divider"></div>
+
   <footer>
-    © 2026 Crunch. All rights reserved.
+    © 2026 Crunch. All rights reserved. &nbsp;·&nbsp;
+    <a href="#privacy">Privacy Policy</a>
   </footer>
 
 </body>
