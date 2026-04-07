@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crunch — Learn Guitar Fast</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0f0f12;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      max-width: 680px;
+      padding: 60px 24px 0;
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 72px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      color: #2dff78;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      font-size: 17px;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 28px;
+      background: rgba(45, 255, 120, 0.1);
+      border: 1px solid rgba(45, 255, 120, 0.3);
+      color: #2dff78;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+    }
+
+    .features {
+      width: 100%;
+      max-width: 680px;
+      padding: 52px 24px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .feature-card {
+      background: #161619;
+      border: 1px solid #2a2a32;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .feature-card .emoji {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .feature-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .feature-card p {
+      font-size: 13px;
+      color: #888;
+      line-height: 1.5;
+    }
+
+    .appstore {
+      margin-top: 52px;
+      text-align: center;
+      padding: 0 24px;
+    }
+
+    .appstore a {
+      display: inline-block;
+      background: #2dff78;
+      color: #000;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 16px 40px;
+      border-radius: 14px;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s;
+    }
+
+    .appstore a:hover { opacity: 0.85; }
+
+    .support {
+      width: 100%;
+      max-width: 680px;
+      margin-top: 60px;
+      padding: 32px 24px;
+      background: #161619;
+      border-top: 1px solid #2a2a32;
+      border-bottom: 1px solid #2a2a32;
+      text-align: center;
+    }
+
+    .support h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .support p {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.7;
+    }
+
+    .support a {
+      color: #2dff78;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .support a:hover { text-decoration: underline; }
+
+    footer {
+      padding: 32px 24px;
+      font-size: 12px;
+      color: #444;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 38px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="icon">⚡</div>
+    <h1>CRUNCH</h1>
+    <p class="tagline">Learn electric guitar. Fast.</p>
+    <span class="badge">Available on the App Store</span>
+  </header>
+
+  <section class="features">
+    <div class="feature-card">
+      <div class="emoji">🎸</div>
+      <h3>Beginner Guide</h3>
+      <p>8-page interactive tutorial — parts, strings, posture, both hands, first note and first chord.</p>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">🎛</div>
+      <h3>Built-in Tuner</h3>
+      <p>Chromatic tuner with live needle. Auto-detects your string. No separate app needed.</p>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">🖐</div>
+      <h3>Chord Library</h3>
+      <p>11 essential chords with visual fretboard diagrams and step-by-step fingering.</p>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">⚡</div>
+      <h3>XP & Badges</h3>
+      <p>Earn XP, level up, build streaks, unlock 9 badges. Progress saved locally — no account needed.</p>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">📖</div>
+      <h3>Step-by-step Lessons</h3>
+      <p>5 minutes per lesson. Each one unlocks the next. From first note to pentatonic scales.</p>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">📵</div>
+      <h3>100% Offline</h3>
+      <p>No account. No subscription. No internet. Everything lives on your iPhone.</p>
+    </div>
+  </section>
+
+  <div class="appstore">
+    <a href="https://apps.apple.com/app/crunch" target="_blank">Download on the App Store</a>
+  </div>
+
+  <section class="support">
+    <h2>Support</h2>
+    <p>
+      Have a question, found a bug, or just want to say hi?<br />
+      Reach out at <a href="mailto:support@crunchguitar.app">support@crunchguitar.app</a><br /><br />
+      We typically respond within 24 hours.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Crunch. All rights reserved.
+  </footer>
+
+</body>
+</html>
